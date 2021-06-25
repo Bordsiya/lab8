@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditSpaceShipController">
+    <children>
+        <AnchorPane layoutX="-9.0" layoutY="-10.0" prefHeight="77.0" prefWidth="1119.0" />
+        <AnchorPane layoutX="-9.0" layoutY="67.0" prefHeight="547.0" prefWidth="1114.0">
+            <children>
+                <Label fx:id="editTitle" layoutX="42.0" layoutY="8.0" text="Редактирование">
+                    <font>
+                        <Font name="Calibri Bold" size="50.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="444.0" fitWidth="362.0" layoutX="794.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="85.0">
+               <image>
+                  <Image url="@../pictures/space_ship.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" layoutX="97.0" layoutY="102.0" prefHeight="414.0" prefWidth="115.0" spacing="17.0">
+               <children>
+                  <Label fx:id="idLabel" text="ID">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" text="Name">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="creationDateLabel" text="Creation date">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="healthLabel" alignment="CENTER" text="Health">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="achievementsLabel" text="Achievements">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weaponTypeLabel" text="Weapon type">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="meleeWeaponLabel" text="Melee weapon">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="X" fx:id="xLabel">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yLabel" text="Y">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chapterNameLabel" text="Chapter name">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chapterWorldLabel" text="Chapter world">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="creatorLabel" text="Creator">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="334.0" layoutY="99.0" prefHeight="414.0" prefWidth="183.0" spacing="4.0">
+               <children>
+                  <TextField fx:id="id" visible="false" />
+                  <TextField fx:id="name" prefHeight="13.0" prefWidth="183.0" />
+                  <TextField visible="false" />
+                  <TextField fx:id="health" prefHeight="13.0" prefWidth="183.0" />
+                  <TextField fx:id="achievements" prefHeight="13.0" />
+                  <ChoiceBox fx:id="weaponType" prefHeight="13.0" prefWidth="186.0" />
+                  <ChoiceBox fx:id="meleeWeapon" prefHeight="13.0" prefWidth="186.0" />
+                  <TextField prefHeight="13.0" fx:id="x" />
+                  <TextField fx:id="y" prefHeight="13.0" />
+                  <TextField fx:id="chapterName" prefHeight="13.0" />
+                  <TextField fx:id="chapterWorld" prefHeight="13.0" />
+                  <TextField visible="false" />
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-1.0" layoutY="615.0" prefHeight="85.0" prefWidth="1102.0">
+         <children>
+            <Button fx:id="btn_send" layoutX="807.0" layoutY="9.0" mnemonicParsing="false" onAction="#toSendPress" prefHeight="44.0" prefWidth="204.0" style="-fx-background-color: #57B7FA;" text="Отправить" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
